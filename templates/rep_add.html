@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+	<meta charset = "utf-8">
+	<title>Ajout de Contact</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+	<div class="header">
+		<a> {{username}} </a>
+		<form action="http://localhost:5000/main" method="post">
+			<input type="submit" value="Menu Principal" name="Menu"/></form>
+		<form action="http://localhost:5000" method="post">
+			<input type="submit" value="Deconnexion" name="Logout"/></form>
+	</div>
+	<h1> Quel contact souhaitez vous ajouter {{username}} ? </h1>
+	<form action="http://localhost:5000/results" method="post">
+		<label>Nom du Contact</label> : <input type="text" name="name_ca" />
+		<label>Numéro du Contact</label> : <input type="text" name="number" />
+		<input type="submit" value="Envoyer" name="Add"/>	
+	<h3> {{res}} </h3>
+</body>
+</html>

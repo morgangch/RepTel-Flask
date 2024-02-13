@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+	<meta charset = "utf-8">
+	<title>Formulaire de Selection.</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+	<form action="http://localhost:5000/login" method="post">
+		<input type="submit" value="Login" /></form>
+	<form action="http://localhost:5000/signup" method="post">
+		<input type="submit" value="Créer un Compte" /></form>	
+	<h3> {{error_n}} </h3>
+</body>
+</html>

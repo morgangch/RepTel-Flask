@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+	<meta charset = "utf-8">
+	<title>Logging In</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+	<form action="http://localhost:5000/main" method="post">
+		<label>Nom d'Utilisateur</label> : <input type="text" name="username" />
+		<label>Mot de Passe</label> : <input type="password" name="password" />
+		<input type="submit" value="Se connecter" name="Login"/>	
+	<h3> {{error_n}} </h3>
+</body>
+</html>

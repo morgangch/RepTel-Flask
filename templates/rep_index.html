@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+	<meta charset = "utf-8">
+	<title>Recherche de Contact</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+	<div class="header">
+		<a> {{username}} </a>
+		<form action="http://localhost:5000/main" method="post">
+			<input type="submit" value="Menu Principal" name="Menu"/></form>
+		<form action="http://localhost:5000" method="post">
+			<input type="submit" value="Deconnexion" name="Logout"/></form>
+	</div>
+	<form action="http://localhost:5000/results" method="post">
+		<label>Nom du Contact</label> : <input type="text" name="name_ci" />
+		<input type="submit" value="Envoyer" name="Index"/>	
+	<h3> {{res}} </h3>	
+</body>
+</html>

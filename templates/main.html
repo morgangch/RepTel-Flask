@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+	<meta charset = "utf-8">
+	<title>Répertoire</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+	<div class="header">
+		<a> {{username}} </a>
+		<form action="http://localhost:5000" method="post">
+			<input type="submit" value="Deconnexion" name="Logout"/></form>
+	</div>
+	<form action="http://localhost:5000/rep_list" method="post">
+		<input type="submit" value="Liste des Contacts" /></form>
+	<form action="http://localhost:5000/rep_index" method="post">
+		<input type="submit" value="Chercher un contact" /></form>
+	<form action="http://localhost:5000/rep_add" method="post">
+		<input type="submit" value="Ajouter un contact" /></form>	
+</body>
+</html>

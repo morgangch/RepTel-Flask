@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+	<meta charset = "utf-8">
+	<title>Signing Up</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+	<h4> Attention aux règles de création de compte : votre mot de passe doit contenir plus de 8 caractères, dont un caractère spécial au moins, et ne peut pas être constitué de chiffres uniquement. 
+	Votre nom d'utilisateur doit être différent d'un autre, ne pas contenir d'espace, et doit contenir au moins 5 caractères. </h1>
+	<form action="http://localhost:5000/main" method="post">
+		<label>Nom d'Utilisateur</label> : <input type="text" name="username" />
+		<label>Mot de Passe</label> : <input type="password" name="password" />
+		<input type="submit" value="Créer le compte" name="Signup"/>	
+	<h3> {{error_n}} </h3>
+</body>
+</html>

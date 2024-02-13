@@ -1,0 +1,155 @@
+h1 {
+   margin-top: 110px;
+   text-align: center;
+   color:ghostwhite;
+   font-family: Arial
+}
+
+p {
+   font-family: Verdana;
+   color: White;
+}
+
+h3 {
+   font-family: Verdana;
+   color: White;
+   margin-top: 70px;
+   font-size: 32px;
+   text-align: center;
+   padding: 12px 20px;
+}
+
+h4 {
+   font-family: Verdana;
+   color: White;
+   font-size: 19px;
+   text-align: center;
+   padding: 12px 20px;
+}
+
+body {
+   background-color: dimgrey;
+}
+
+
+input[type=text]{
+   border: 3px solid #555;
+   width: 100%;
+   padding: 12px 20px;
+   margin-top: 8px; /* hauteur de l'en-tête */
+   margin-left: 8px;
+   margin-right:8px;
+   margin-bottom:8px;
+   box-sizing: border-box;
+}
+
+input[type=password]{
+   border: 3px solid #555;
+   width: 100%;
+   padding: 12px 20px;
+   margin-top: 8px; /* hauteur de l'en-tête */
+   margin-left: 8px;
+   margin-right:8px;
+   margin-bottom:8px;
+   box-sizing: border-box;
+}
+
+label {
+   color: white;
+   font-size: 25px;
+   text-decoration: none;
+   margin-top: 110px;
+   font-weight:bold;
+   font-family: Arial;
+
+}
+
+form {
+    margin-left: 25%;
+    margin-right:25%;
+    margin-top: 115px;
+    margin-bottom: 55px;
+    width: 50%;
+}
+
+input[type=submit], input[type=reset] input[type=button]{
+   background-color: white;
+   border: none;
+   color: black;
+   text-decoration: none;
+   padding: 16px 23px;:
+   margin-top: 70px;
+   margin-left: 25%;
+   margin-right:25%;
+   margin-bottom:20px;
+   width: 50%;   
+   cursor: pointer;   
+   text-decoration: none;
+   font-weight:bold;
+   font-family: Arial;
+
+}
+
+input[name=Menu]{
+   border: 3px;
+   color: black;
+   text-decoration: none;
+   padding: 16px 23px;:
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right:0px;
+   margin-bottom:50px;
+   background-color: lightgrey;
+   width: 100%;   
+   cursor: pointer;   
+   text-decoration: none;
+   font-weight:bold;
+   font-family: Arial;
+}
+
+input[name=Logout]{
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   border: 3px;
+   color: black;
+   text-decoration: none;
+   padding: 16px 23px;:
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right:0px;
+   margin-bottom:50px;
+   background-color: lightgrey;
+   width: auto;   
+   cursor: pointer;   
+   text-decoration: none;
+   font-weight:bold;
+   font-family: Arial;
+}
+
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 80px;
+   z-index: 999;
+   background-color: rgba(255, 255, 255, 0.9);
+   display: flex;
+   align-items: center;
+   padding: 0 15px;
+   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+   text-decoration: none;
+   color: #555;
+   font-weight: bold;
+   margin-left: 5px;
+   margin-right: 1px;
+   font-family: Verdana;
+   color: black;
+   font-size: 32px;
+   margin-bottom: 10px;
+}
